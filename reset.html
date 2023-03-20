@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="login-heading">
+            <h2>Reset password</h2>
+        </div>
+        <form action="">
+            <div class="email">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Type your email" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+            </div>
+            <div class="password">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Type your new password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <div class="confirm-password">
+                <p> Confirm password</p>
+                <input type="password" name="confirm-password" placeholder="Confirm your new password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <div class="btn-reset">
+                <button>RESET PASSWORD</button>
+            </div>
+        </form>
+        <footer>
+            <p  class="foot">@All rights reserved</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

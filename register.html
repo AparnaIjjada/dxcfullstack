@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="signin.html">Home</a>
+        <a href="Admin.html">Admin</a>
+        <a href="register.html">Register</a>
+      </div>
+    <div class="main">
+        <div class="login-heading">
+            <h2>Register</h2>
+        </div>
+        <form action="">
+            <div class="firstname">
+                <p>First name</p>
+                <input type="text" name="firstname" placeholder="Type your first name" pattern="[a-zA-Z]{2,15}" required>
+            </div>
+            <div class="lastname">
+                <p>Last name</p>
+                <input type="text" name="lastname" placeholder="Type your last name" pattern="[a-zA-Z]{2,15}" required>
+            </div>
+            <div class="gender">
+                <p class="gen-heading">Gender</p>
+                <div class="gen">
+                    
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="gender" class="male">Male</label>
+                    
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="gender" class="female">Female</label>
+                </div>
+                
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Type your email" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+            </div>
+            <div class="password">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Type your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <div class="confirm-password">
+                <p>Confirm password</p>
+                <input type="password" name="confirmpassword" placeholder="Confirm your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <div class="phone">
+                <p class="mobile-heading">Mobile</p>
+                <div class="phone2">
+                    <div class="code">
+                        <select name="country" id="country">
+                            <option value="+91" selected>+91</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <option value="+965">+965</option>
+                            <option value="+61">+61</option>
+                        </select>
+                    </div>
+                    <div class="mobile">
+                        <input type="tel" name="mobile" placeholder="Type your mobile number" pattern="[6-9]{1}[0-9]{9}" required>
+                    </div>
+                </div>
+            </div>
+            <div class="terms">
+                <div class="checkbox">
+                    <input type="checkbox" name="terms" required>
+                </div>
+                <div class="checkbox-name-div">
+                    <a href="terms.txt"><label for="terms" class="checkbox-name">Terms and Conditions</label></a>
+                </div>
+                
+            </div>
+            <div class="btn-register">
+                <button>REGISTER</button>
+            </div>
+        </form>
+        <footer>
+            <p  class="foot">@All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

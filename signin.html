@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="signin.html">Home</a>
+        <a href="Admin.html">Admin</a>
+        <a href="register.html">Register</a>
+      </div>
+
+    <div class="main">
+        <div class="login-heading">
+            <h1>Login</h1>
+        </div>
+        <form action="">
+            <div class="email">
+                <p>E-Mail</p>
+                <i class="fa-regular fa-user"></i>
+                <input type="email" id="email" placeholder="Type your e-mail" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+            </div>
+            <!-- <div class="hr-line">
+                <hr>
+            </div> -->
+            
+            <div class="password">
+                <p>Password</p>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Type your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <!-- <div class="hr-line">
+                <hr>
+            </div> -->
+            <div class="reset-password">
+                <a href="reset.html">Forget password?</a>
+            </div>
+            <div class="button">
+                <button>LOGIN</button>
+            </div>
+        </form>
+        
+        <p class="p1">Or Sign Up Using </p>
+        <div class="other-account">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://accounts.google.com/AddSession/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=en&authuser=0&flowName=GlifWebSignIn&flowEntry=AddSession"><i class="fa-brands fa-google"></i></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footer">
+            <p>Or Sign Up Using</p>
+            <a href="register.html" class="sign-up">SIGN UP</a>
+        </div>
+        <footer>
+            <p class="foot">@All rights reserved</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
+
